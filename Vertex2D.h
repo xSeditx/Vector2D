@@ -52,6 +52,8 @@ public:
         friend Vector2D operator /(Vector2D left, double right);
         friend Vector2D operator *(Vector2D left, double right);
         
+        Vector2D& operator =(double right);
+
         Vector2D& operator +=(double other);
         Vector2D& operator -=(double other);
         Vector2D& operator *=(double other);
@@ -64,4 +66,4 @@ public:
 
 extern inline double GetAngle (Vector2D A, Vector2D B);
 extern inline double Squared(double x);
-
+extern Vector2D Get_Displacement(Vector2D A, Vector2D B);

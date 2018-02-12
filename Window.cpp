@@ -225,7 +225,7 @@ void LINE2(int x,int y, float Angle,int Length){
      LOOP(Length){
           Xpos += cos(RADIANS(Angle)),
           Ypos += sin(RADIANS(Angle));
-          SET_PIXEL(Xpos,Ypos,SCREEN->DRAW_COLOR);
+          SET_PIXELII(Xpos,Ypos,SCREEN->DRAW_COLOR);
      }
 }
 

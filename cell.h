@@ -68,6 +68,9 @@ struct Edge {
 
     Cell *second;
     int ID;
+               
+    Vector2D  Displacement,
+              RestDistance;
 
     double          Distance, 
                      Tension,
